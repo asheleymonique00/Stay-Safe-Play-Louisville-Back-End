@@ -10,8 +10,8 @@ app.get('/', (req, res) => {
     res.send('Homepage');
 })
 
-app.use('/author', routes.author);
-app.use('/thesis', routes.thesis);
+app.use('/user', routes.user);
+app.use('/products', routes.products);
 
 app.listen(3000, ()=>{
 	console.log('listening....');

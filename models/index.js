@@ -26,3 +26,6 @@ exports.user = user;
 
 const products = require('./products');
 exports.products = products;
+
+const orderDetails = require('./order-details');
+exports.orderDetails = orderDetails;
