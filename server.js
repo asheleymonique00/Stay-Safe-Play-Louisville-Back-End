@@ -12,7 +12,8 @@ app.get('/', (req, res) => {
 
 app.use('/user', routes.user);
 app.use('/products', routes.products);
+app.use('/orderdetails', routes.orderDetails);
 
-app.listen(3000, ()=>{
+app.listen(3001, ()=>{
 	console.log('listening....');
 });

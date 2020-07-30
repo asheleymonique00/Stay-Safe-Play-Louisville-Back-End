@@ -1,4 +1,4 @@
-const Author = require('../models').Author;
+const user = require('../models').user;
 
 const createUser = (req, res) => {
 	user.create(req.body, (err, createdUser) => {

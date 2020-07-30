@@ -32,7 +32,7 @@ const showAllOrderDetails = (req, res)=>{
 	})
 }
 
-const deleteOrderdetails = (req, res)=>{
+const deleteOrderDetails = (req, res)=>{
 	orderDetails.findByIdAndRemove(req.params.id, (err, deletedOrderDetails) => {
 		if(err){
 			return res.status(500).json(err);
@@ -85,7 +85,7 @@ module.exports = {
     createOrderDetails,
     showOrderDetails,
     showAllOrderDetails,
-    deleteOrderdetails,
+    deleteOrderDetails,
 	editOrderDetails,
 	findOderDetailsByUser
 }

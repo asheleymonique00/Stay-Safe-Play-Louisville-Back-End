@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const connectionString = 'mongodb://localhost/thesis-app';
+const connectionString = 'mongodb://localhost/backend-updated';
 
 mongoose.connect(connectionString, { useNewUrlParser: true,
                                      useUnifiedTopology: true,
@@ -27,5 +27,5 @@ exports.user = user;
 const products = require('./products');
 exports.products = products;
 
-const orderDetails = require('./order-details');
+const orderDetails = require('./orderdetails');
 exports.orderDetails = orderDetails;
