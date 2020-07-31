@@ -9,7 +9,7 @@ const userSchema = mongoose.Schema({
     phone: String,
     orders: [{
         type: mongoose.Schema.ObjectId,
-        ref: 'OderDetails'
+        ref: 'OrderDetails'
     }]
 
 });
