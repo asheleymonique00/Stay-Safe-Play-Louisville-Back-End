@@ -1,4 +1,4 @@
-const User = require('../models').User;
+const User = require('../models').user;
 
 const createUser = (req, res) => {
 	User.create(req.body, (err, createdUser) => {
@@ -28,6 +28,8 @@ const deleteUser = (req, res)=>{
 }
 
 const editUser = (req, res)=>{
+	console.log(req.params.id);
+	console.log(req.body);
 	User.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, updatedUser) => {
 		if(err){
 			return res.status(500).json(err);
